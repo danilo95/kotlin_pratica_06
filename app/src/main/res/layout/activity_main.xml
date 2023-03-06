@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bntFrame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickFrame"
+        android:text="Frame Layout"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bntLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLinear"
+        android:text="Linear Layout"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/bntFrame"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/bntRelative"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickRelative"
+        android:text="Relative Layout"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/bntLinear"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/bntTable"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickTable"
+        android:text="Table Layout"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/bntRelative"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/bntGrid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickGrid"
+        android:text="Grid Layout"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@+id/bntTable"
+        tools:layout_editor_absoluteX="0dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

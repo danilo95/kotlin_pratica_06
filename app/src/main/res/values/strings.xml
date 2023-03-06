@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Application_practica_06</string>
+    <string name="contasena">olvido su contraseña?</string>
+    <string name="contrasena">Contraseña</string>
+</resources>
